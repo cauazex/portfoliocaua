@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS comum -->
+</head>
+<body>
+    <header>
+        <h1>Cauã <span>Romero</span></h1>
+        <nav>
+            <ul class="navegacao-primaria">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section aria-label="seção currículo download Cauã" class="section-div">
+        <div>
+            <h2 class="pagina2-titulo">Sobre mim:</h2> 
+            <p>Sou um programador com formação em Linguagem Web HTML e Linguagem de Programação C e Python</p>
+            <button id="voltarBtn">Início</button>
+        </div>
+        <img src="https://enotas.com.br/blog/wp-content/uploads/2021/02/linguagem-de-programa%C3%A7%C3%A3o.jpg"> 
+    </section>
+    <script src="script.js"></script>
+    <script>
+        function voltarParaPaginaInicial() {
+            window.location.href = "index.html"; 
+        }
+
+        document.getElementById("voltarBtn").addEventListener("click", voltarParaPaginaInicial);
+    </script>
+</body>
+</html>
